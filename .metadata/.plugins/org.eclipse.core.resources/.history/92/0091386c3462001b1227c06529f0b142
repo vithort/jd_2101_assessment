@@ -1,0 +1,48 @@
+package com.primeit;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Student {
+
+	// Write a Student Class and call all these methods mentioned above and Print
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MathCourse mathCourse = new MathCourse();
+		EnglishCourse englishCourse = new EnglishCourse();
+		StatisticsCourse statisticsCourse = new StatisticsCourse();
+
+		int isPrime = mathCourse.findPrimeNumber(10);
+		System.out.print("Math Course Find Prime Number return : ");
+		if (isPrime == 0) {
+			System.out.println(isPrime + " is not a Prime Number!\n");
+		} else {
+			System.out.println(isPrime + " is a Prime Number!\n");
+		}
+
+		int[] arr = { 13, 7, 6, 45, 21, 9, 101, 102 };
+		int[] arrResult = {};
+		arrResult = mathCourse.sortArray(arr);
+		System.out.println("Math Course Sort Array return : " + Arrays.toString(arrResult) + "\n");
+
+		float sqrResult = mathCourse.square("9");
+		System.out.println("Math Course Square return: " + sqrResult + "\n");
+
+		List fibResult = mathCourse.fibonacciNumber(10);
+		System.out.println("Math Course Fibonacci return: " + fibResult.toString() + "\n");
+	}
+
+	public static long fib(int n) {
+		if (n <= 1) {
+			return n;
+		} else {
+			return fib(n - 1) + fib(n - 2);
+		}
+	}
+
+	private static void print(Object obj) {
+
+	}
+
+}

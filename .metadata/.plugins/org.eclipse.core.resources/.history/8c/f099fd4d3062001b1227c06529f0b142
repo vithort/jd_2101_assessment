@@ -1,0 +1,69 @@
+package com.primeit;
+
+import java.lang.Math;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MathCourse extends Course {
+
+	// Find and return the Prime Number of an Integer
+	public static int findPrimeNumber(int number) {
+		boolean is = isPrime(number);
+		if (is) {
+			return number;
+		}
+		return 0;
+	}
+
+	// Return the Fibonacci Number till given integer
+	public static int[] fibonacciNumber(int number) {
+		int fibonacci[] = {};
+		List<> listFib = new ArrayList<>();
+		for (int i = 0; i <= number; i++) {
+			fibonacci[i] = fib(i);
+		}
+		return fibonacci;
+	}
+
+	// Sort a numeric array and Return
+	public static int[] sortArray(int[] number) {
+		int[] arr = { 13, 7, 6, 45, 21, 9, 101, 102 };
+		Arrays.sort(arr);
+		return arr;
+	}
+
+	// Accept a String, Check for Integer, Handle Exception if not Integer, return
+	// square root.
+	public static float square(String string) {
+		float result = 0;
+		try {
+			// string.matches("[0-9]*");
+			result = Float.parseFloat(string);
+		} catch (Exception e) {
+			// e.printStackTrace();
+			System.out.println("Number is not an Integer!");
+		}
+		return (float) Math.sqrt(result);
+	}
+
+	private static int fib(int n) {
+		if (n <= 1) {
+			return n;
+		} else {
+			return fib(n - 1) + fib(n - 2);
+		}
+	}
+
+	private static boolean isInteger(String str) {
+		return str != null && str.matches("[0-9]*");
+	}
+
+	private static boolean isPrime(int number) {
+		for (int j = 2; j < number; j++) {
+			if (number % j == 0)
+				return false;
+		}
+		return true;
+	}
+}

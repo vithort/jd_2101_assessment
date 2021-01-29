@@ -1,0 +1,53 @@
+package com.primeit;
+
+import java.lang.Math;
+import java.util.Arrays;
+
+public class MathCourse {
+	// Find and return the Prime Number of an Integer
+	public static int findPrimeNumber(int number) {
+
+		return 1;
+	}
+
+	// Return the Fibonacci Number till given integer
+	public static void fibonacciNumber(int number) {
+		for (int i = 1; i <= number; i++) {
+			System.out.print(fib(i) + ", ");
+		}
+
+	}
+
+	// Sort a numeric array and Return
+	public static int[] sortArray(int[] number) {
+		int[] arr = { 13, 7, 6, 45, 21, 9, 101, 102 };
+		Arrays.sort(arr);
+		return arr;
+	}
+
+	// Accept a String, Check for Integer, Handle Exception if not Integer, return
+	// square root.
+	public static int square(String string) {
+		int result = 0;
+		try {
+			// string.matches("[0-9]*");
+			result = Integer.parseInt(string);
+		} catch (Exception e) {
+			// e.printStackTrace();
+			System.out.println("Number is not an Integer!");
+		}
+		return (int) Math.sqrt(result);
+	}
+
+	private static long fib(int n) {
+		if (n <= 1) {
+			return n;
+		} else {
+			return fib(n - 1) + fib(n - 2);
+		}
+	}
+	
+    private static boolean isInteger(String str) {
+        return str != null && str.matches("[0-9]*");
+    }
+}

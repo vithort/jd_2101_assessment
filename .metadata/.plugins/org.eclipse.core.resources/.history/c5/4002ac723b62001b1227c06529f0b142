@@ -1,0 +1,37 @@
+package com.primeit;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+public class StatisticsCourse extends Course {
+
+	// Create Employee Class separately with three attributes Name, Id, Age, Salary,
+	// Dept, Date OF Joining
+
+	// Create a class variable called employees in StatisticsCourse which is a list
+	// of employee class.
+	
+	List<Employee> employees = new ArrayList<Employee>();
+	DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+	
+	public StatisticsCourse() {
+		super();
+		Employee emp1 = new Employee("Employee 1", 1, 27, 600.00, "Services", df.parse("01/02/2020"));
+	}
+	
+	
+	
+
+	// Use Constructor to populate values to employees. It should contain at least
+	// 10 Employee Data.
+
+	// Write a method to return a Map (Key: Id, Value: Name)
+
+	// Write a method to return a Set of employees whose age is between 30-40.
+
+	// Write a method to Sort the employees by Name and then find the list who
+	// joined after 1st April, 2018
+
+}

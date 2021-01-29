@@ -1,0 +1,11 @@
+package com.primeit;
+
+public class EnglishCourse extends Course {
+
+	// Accept a Word and find the vowels and return
+
+	// Accept a Word and check if its Palindrome
+
+	// Accept a word and a number, Return Substring till the given number
+
+}

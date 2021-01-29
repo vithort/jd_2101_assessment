@@ -1,0 +1,40 @@
+package com.primeit;
+
+import java.util.Arrays;
+
+public class Student {
+
+	// Write a Student Class and call all these methods mentioned above and Print
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MathCourse mathCourse = new MathCourse();
+		
+		int[] arr = { 13, 7, 6, 45, 21, 9, 101, 102 };
+		int[] arrResult = {};
+		arrResult = mathCourse.sortArray(arr);
+		System.out.println("Math Course Sort Array return : " + Arrays.toString(arrResult) + "\n");
+
+		
+		String string = "9";
+		float sqrResult = mathCourse.square(string);
+		System.out.println("math Course Square return: " + sqrResult + "\n");
+
+		
+		int fibResult[] = mathCourse.fibonacciNumber(5);
+		System.out.println("math Course Square return: " + Arrays.toString(fibResult) + "\n");
+	}
+
+	public static long fib(int n) {
+		if (n <= 1) {
+			return n;
+		} else {
+			return fib(n - 1) + fib(n - 2);
+		}
+	}
+	
+	private static void print(Object obj) {
+		
+	}
+
+}

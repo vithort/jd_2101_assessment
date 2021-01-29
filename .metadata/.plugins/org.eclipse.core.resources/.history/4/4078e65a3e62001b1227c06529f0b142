@@ -1,0 +1,41 @@
+package com.primeit;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class StatisticsCourse extends Course {
+
+	// Create Employee Class separately with three attributes Name, Id, Age, Salary,
+	// Dept, Date OF Joining
+
+	// Create a class variable called employees in StatisticsCourse which is a list
+	// of employee class.
+	
+	// Use Constructor to populate values to employees. It should contain at least
+	// 10 Employee Data.
+	
+	List<Employee> employees = new ArrayList<Employee>();
+	
+	public StatisticsCourse() {
+		super();
+		employees.add(new Employee("Employee 1", 1, 27, 600, "Services", new Date()));
+		employees.add(new Employee("Employee 2", 2, 40, 700, "IT", new Date()));
+		employees.add(new Employee("Employee 3", 3, 42, 620, "Services", new Date()));
+		employees.add(new Employee("Employee 4", 4, 35, 800, "Engineer", new Date()));
+		employees.add(new Employee("Employee 5", 5, 29, 600, "RH", new Date()));
+		employees.add(new Employee("Employee 6", 6, 32, 900, "RH", new Date()));
+		employees.add(new Employee("Employee 7", 7, 27, 1200, "IT", new Date()));
+		employees.add(new Employee("Employee 8", 8, 22, 550, "Services", new Date()));
+		employees.add(new Employee("Employee 9", 9, 33, 500, "Services", new Date()));
+		employees.add(new Employee("Employee 10", 10, 35, 620, "Services", new Date()));		
+	}
+
+	// Write a method to return a Map (Key: Id, Value: Name)
+
+	// Write a method to return a Set of employees whose age is between 30-40.
+
+	// Write a method to Sort the employees by Name and then find the list who
+	// joined after 1st April, 2018
+
+}

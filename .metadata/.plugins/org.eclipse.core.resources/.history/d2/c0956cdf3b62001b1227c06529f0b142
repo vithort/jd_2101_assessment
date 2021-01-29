@@ -1,0 +1,32 @@
+package com.primeit;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+public class Employee {
+
+	// Create Employee Class separately with three attributes Name, Id, Age, Salary,
+	// Dept, Date OF Joining
+
+	private String name;
+	private int id;
+	private int age;
+	private BigDecimal salary;
+	private String dept;
+	private Date dateOfJoin;
+
+	public Employee() {
+		super();
+	}
+
+	public Employee(String name, int id, int age, BigDecimal salary, String dept, Date dateOfJoin) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.age = age;
+		this.salary = salary;
+		this.dept = dept;
+		this.dateOfJoin = dateOfJoin;
+	}
+
+}

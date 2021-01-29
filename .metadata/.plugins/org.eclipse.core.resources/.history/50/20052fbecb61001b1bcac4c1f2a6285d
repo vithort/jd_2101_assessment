@@ -1,0 +1,13 @@
+package com.primeit;
+
+public class Student {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String string = "16";
+		int resultado = (int) (Math.sqrt(Integer.parseInt(string)));
+		System.out.println(resultado);
+	}
+
+}

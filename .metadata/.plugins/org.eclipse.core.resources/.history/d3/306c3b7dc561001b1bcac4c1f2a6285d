@@ -1,0 +1,31 @@
+package com.primeit;
+
+import java.util.List;
+
+public class StatisticsCourse {
+
+	// Find and return the Prime Number of an Integer
+	private static int findPrimeNumber(int number) {
+		
+		return 1;
+	}
+	
+	// Return the Fibonacci Number till given integer
+	private static void fibonacciNumber(int number) {
+		
+		
+	}
+	
+	// Sort a numeric array and Return
+	private static void sortArray(int number) {
+		
+
+	}
+	
+	// Accept a String, Check for Integer, Handle Exception if not Integer, return square root.
+	private static void square(int number) {
+		
+		
+	}
+	
+}
