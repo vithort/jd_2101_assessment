@@ -16,7 +16,7 @@ public class Student {
 		StatisticsCourse statisticsCourse = new StatisticsCourse();
 
 		// MATH COURSE
-
+		
 		int isPrime = mathCourse.findPrimeNumber(10);
 		System.out.print("Math Course Find Prime Number return : ");
 		if (isPrime == 0) {
@@ -35,13 +35,13 @@ public class Student {
 
 		List fibResult = mathCourse.fibonacciNumber(10);
 		System.out.println("Math Course Fibonacci return: " + fibResult.toString() + "\n");
-
+		
 		// ENGLISH COURSE
-
+		
 		List<String> resultVowel = englishCourse.findVowel("Institutionalized");
 		System.out.println("English Course Find Vowel return: " + resultVowel.toString() + "\n");
-
-		String wordPalindrome = "Ana";
+		
+		String wordPalindrome = "arara";
 		boolean isPalindrome = englishCourse.palindrome(wordPalindrome);
 		System.out.print("English Course Is Palindrome return: ");
 		if (isPalindrome) {
@@ -49,33 +49,22 @@ public class Student {
 		} else {
 			System.out.println("'" + wordPalindrome + "' is not palindrome (" + isPalindrome + ")\n");
 		}
-
+		
 		String returnSubstring = englishCourse.returnSubstring("test", 2);
 		System.out.println("English Course Substring return: " + returnSubstring + "\n");
+		
 
 		// STATISTICS COURSE
 
-		System.out.println("Statistics Course Return Map return: "
-				+ statisticsCourse.returnMap(statisticsCourse.employees) + "\n");
-
-		// Set<Employee> employeesMap = new HashSet<Employee>(statisticsCourse.employees);
-
-		Set<Employee> empSet = statisticsCourse.returnSet(statisticsCourse.employees);
-
-		System.out.println("Statistics Course Return Set return: ");
-		for (Employee employee : empSet) {
-			System.out.println("Name: " + employee.getName() + ", Age: " + employee.getAge());
-		}
-
-		System.out.print("\n");
 		
-		List<Employee> empDate = statisticsCourse.returnDateJoined(statisticsCourse.employees);
+		System.out.println("Statistics Course Return Map return: " + statisticsCourse.returnMap(statisticsCourse.employees) + "\n");
 		
-		System.out.println("Statistics Course Return Date of Join return: ");
-		for (Employee employee : empDate) {
-			System.out.println("Name: " + employee.getName() + ", Date of Join: " + employee.getDateOfJoin());
-		}
-
+		Set<Employee> employeesMap = new HashSet<Employee>(statisticsCourse.employees);
+		
+		System.out.println("Statistics Course Return Set return: " + statisticsCourse.returnSet(statisticsCourse.employees) + "\n");
+		
+		//System.out.println("Statistics Course Date joined return: " + statisticsCourse.returnDateJoined(statisticsCourse.employees) + "\n");
+		
 	}
 
 }

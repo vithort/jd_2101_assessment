@@ -49,6 +49,7 @@ public class StatisticsCourse extends Course {
 	public static Set<Employee> returnSet(List<Employee> list) {
 		Predicate<Employee> byAge = employee -> employee.getAge() >= 30 && employee.getAge() <= 40;
 		Set<Employee> result = new HashSet<Employee>(list.stream().filter(byAge).collect(Collectors.toList()));
+		System.out.println(result.toString());
 		return result;
 	}
 
@@ -56,7 +57,7 @@ public class StatisticsCourse extends Course {
 	// joined after 1st April, 2018
 	public static List<Employee> returnDateJoined(List<Employee> list) {
 		Predicate<Employee> byDateOfJoin = employee -> employee.getDateOfJoin().after(new Date("2018/04/01"));
-		Set<Employee> result = new HashSet<Employee>(list.stream().filter(byDateOfJoin).collect(Collectors.toList()));
+		Set<Employee> result = (Set<Employee>) list.stream().filter(byDateOfJoin).collect(Collectors.toList());
 		Collections.sort(list);
 
 		return list;

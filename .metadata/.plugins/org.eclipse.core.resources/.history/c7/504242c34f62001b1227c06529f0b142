@@ -78,7 +78,7 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee otherEmployee) {
-		// System.out.println(this.name.compareTo(otherEmployee.getName()));
+		console.log(this.name.compareTo(otherEmployee.getName()));
 		return this.name.compareTo(otherEmployee.getName());
 	}
 

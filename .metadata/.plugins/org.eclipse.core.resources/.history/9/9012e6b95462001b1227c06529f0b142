@@ -67,7 +67,7 @@ public class Student {
 			System.out.println("Name: " + employee.getName() + ", Age: " + employee.getAge());
 		}
 
-		System.out.print("\n");
+		System.out.println("\n");
 		
 		List<Employee> empDate = statisticsCourse.returnDateJoined(statisticsCourse.employees);
 		

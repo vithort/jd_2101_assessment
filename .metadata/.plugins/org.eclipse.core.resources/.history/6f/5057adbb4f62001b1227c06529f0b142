@@ -78,8 +78,13 @@ public class Employee implements Comparable<Employee> {
 
 	@Override
 	public int compareTo(Employee otherEmployee) {
-		// System.out.println(this.name.compareTo(otherEmployee.getName()));
-		return this.name.compareTo(otherEmployee.getName());
+		/*if (this.name > otherEmployee.getName()) {
+			return -1;
+		}
+		if (this.name < otherEmployee.getName()) {
+			return 1;
+		}*/
+		return 0;
 	}
 
 

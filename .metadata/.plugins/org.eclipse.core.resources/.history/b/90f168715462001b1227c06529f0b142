@@ -56,7 +56,7 @@ public class StatisticsCourse extends Course {
 	// joined after 1st April, 2018
 	public static List<Employee> returnDateJoined(List<Employee> list) {
 		Predicate<Employee> byDateOfJoin = employee -> employee.getDateOfJoin().after(new Date("2018/04/01"));
-		Set<Employee> result = new HashSet<Employee>(list.stream().filter(byDateOfJoin).collect(Collectors.toList()));
+		Set<Employee> result = new HashSet<Employee> list.stream().filter(byDateOfJoin).collect(Collectors.toList());
 		Collections.sort(list);
 
 		return list;

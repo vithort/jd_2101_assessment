@@ -1,8 +1,9 @@
 package com.primeit;
 
+
 import java.util.Date;
 
-public class Employee implements Comparable<Employee> {
+public class Employee {
 
 	// Create Employee Class separately with three attributes Name, Id, Age, Salary,
 	// Dept, Date OF Joining
@@ -75,12 +76,5 @@ public class Employee implements Comparable<Employee> {
 		this.dept = dept;
 		this.dateOfJoin = dateOfJoin;
 	}
-
-	@Override
-	public int compareTo(Employee otherEmployee) {
-		// System.out.println(this.name.compareTo(otherEmployee.getName()));
-		return this.name.compareTo(otherEmployee.getName());
-	}
-
 
 }
